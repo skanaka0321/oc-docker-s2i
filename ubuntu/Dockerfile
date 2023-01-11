@@ -1,6 +1,6 @@
 # nginx-centos7
 # Here you can use whatever base image is relevant for your application.
-FROM redhat/ubi8
+FROM centos:centos7
 
 # Here you can specify the maintainer for the image that you're building
 #LABEL maintainer="Your Name <your.name@example.com>"
