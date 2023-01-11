@@ -9,4 +9,4 @@ RUN yum update -y && \
 USER apache
 
 EXPOSE 80
-CMD ["sudo", "httpd", "-DFOREGROUND"]
+CMD ["httpd", "-DFOREGROUND"]
