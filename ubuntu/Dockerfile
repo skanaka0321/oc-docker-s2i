@@ -6,7 +6,7 @@ RUN yum update -y && \
   
 #RUN useradd -r -U -d /usr/local/apache2 -s /sbin/nologin apache
 #RUN chown -R apache:apache /usr/local/apache2
-USER apache
+USER root
 
 EXPOSE 80
-CMD ["httpd", "-DFOREGROUND"]
+CMD ["/usr/sbin/httpd", "-DFOREGROUND"]
