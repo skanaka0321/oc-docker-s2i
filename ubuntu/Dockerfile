@@ -6,4 +6,5 @@ RUN yum update -y && \
 
 EXPOSE 80
 
-CMD ["httpd", "-DFOREGROUND"]
+USER root
+CMD ["sudo", "httpd", "-DFOREGROUND"]
