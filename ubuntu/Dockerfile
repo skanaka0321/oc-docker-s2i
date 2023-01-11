@@ -1,4 +1,4 @@
-FROM rhel7:7.5
+FROM redhat/ubi8
 LABEL description="This is a custom httpd container image"
 RUN yum install -y httpd
 EXPOSE 80
