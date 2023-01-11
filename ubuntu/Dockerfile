@@ -1,5 +1,7 @@
 # simple dockerfile to test OCP s2i using Dockerfile 
 
-FROM ubuntu:18.04
+#FROM ubuntu:18.04
 # CMD ["/bin/bash", "-c", "sleep infinity"]
+FROM httpd:2.4
 CMD ["/bin/bash", "-c", "--", "while true; do sleep 7200; done;"]
+
