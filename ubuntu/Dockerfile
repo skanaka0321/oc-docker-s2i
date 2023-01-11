@@ -1,9 +1,9 @@
 # nginx-centos7
 # Here you can use whatever base image is relevant for your application.
-FROM centos:centos7
+FROM redhat/ubi8
 
 # Here you can specify the maintainer for the image that you're building
-LABEL maintainer="Your Name <your.name@example.com>"
+#LABEL maintainer="Your Name <your.name@example.com>"
 
 # Export an environment variable that provides information about the application version.
 # Replace this with the version for your application.
@@ -46,4 +46,3 @@ EXPOSE 8080
 # Modify the usage script in your application dir to inform the user how to run
 # this image.
 CMD ["/usr/libexec/s2i/usage"]
-Footer
